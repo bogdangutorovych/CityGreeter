@@ -1,6 +1,7 @@
 package com.bogdan.citygreeter;
 
 import java.time.LocalTime;
+import java.util.Locale;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,13 +24,13 @@ public class Main {
         
         if (args.length == 2) {
             log.info("2 parameters has been entered");
-            displayedMessage = message.formMessage(args[0], LocalTime.now(message.assignCityZoneId(args[1])));
+            displayedMessage = message.formMessage(args[0], LocalTime.now(message.assignCityZoneId(args[1])), Locale.getDefault());
             log.info("Final message - " + displayedMessage);
             System.out.println(displayedMessage);
         } else { 
             log.info("1 parameter has been entered");
             log.info("Time zone has not been entered!");
-            displayedMessage = message.formMessage(args[0], LocalTime.now(message.getDefaultCityZoneId()));
+            displayedMessage = message.formMessage(args[0], LocalTime.now(message.getDefaultCityZoneId()), Locale.getDefault());
             log.info("Final message - " + displayedMessage);
             System.out.println(displayedMessage);
         }

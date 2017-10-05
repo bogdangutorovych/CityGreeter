@@ -24,17 +24,16 @@ class Message {
     
     final String DEFAULT_TIME_ZONE = "GMT";
 
-    public String formMessage(String cityName, LocalTime localTime) {
+    public String formMessage(String cityName, LocalTime localTime, Locale locale) {
         log.info("Entered city name - " + cityName);
-        return getDayPart(localTime) + ", " + cityName + "!";
+        return getDayPart(localTime, locale) + ", " + cityName + "!";
     }
     
-    public String getDayPart(LocalTime cityLocalTime) {
+    public String getDayPart(LocalTime cityLocalTime, Locale locale) {
         
         log.info("LocalTime - " + LocalTime.now());
         log.info("LocalTime in city's Time Zone - " + cityLocalTime.toString());
-        getLocale();
-        ResourceBundle dayPart = ResourceBundle.getBundle("DayPart");
+        ResourceBundle dayPart = ResourceBundle.getBundle("DayPart", locale);
         
         if (cityLocalTime.getHour() >= MORNING_BEGIN && cityLocalTime.getHour() < MORNING_END) {
             log.info("Current day part - MORNING");
@@ -76,12 +75,4 @@ class Message {
         return ZoneId.of(DEFAULT_TIME_ZONE);
     }
     
-    public void getLocale() {
-        log.info("Current Locale - " + Locale.getDefault());
-        if (!Locale.getDefault().toString().equals("ru_RU") && !Locale.getDefault().toString().equals("ru_ru")) {
-            Locale.setDefault(new Locale("en_us"));
-            log.info("Locale is set to " + Locale.getDefault().toString());
-        }                
-    }
-
 }
