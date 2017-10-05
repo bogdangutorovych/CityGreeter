@@ -98,7 +98,6 @@ public class MessageTest {
     @Test
     public void shouldFormMessageWithLocaleRU() {
         Locale.setDefault(new Locale("ru_RU"));
-        System.out.println(Locale.getDefault().toString());
         assertEquals("Доброе утро, New York!", message.formMessage("New York", LocalTime.of(8, 00, 00)));
         assertEquals("Добрый день, New York!", message.formMessage("New York", LocalTime.of(12, 00, 00)));
         assertEquals("Добрый вечер, New York!", message.formMessage("New York", LocalTime.of(19, 00, 00)));
@@ -113,7 +112,6 @@ public class MessageTest {
     @Test
     public void shouldFormMessageWithLocaleUS() {
         Locale.setDefault(new Locale("en_US"));
-        System.out.println(Locale.getDefault().toString());
         assertEquals("Good night, New York!", message.formMessage("New York", LocalTime.of(5, 00, 00)));
         assertEquals("Good morning, New York!", message.formMessage("New York", LocalTime.of(8, 00, 00)));
         assertEquals("Good day, New York!", message.formMessage("New York", LocalTime.of(12, 00, 00)));
