@@ -64,7 +64,7 @@ public class MessageTest {
     
     @Test
     public void shouldReturnDayPartForLocaleRu() {
-        Locale locale = new Locale("ru_Ru");
+        Locale locale = new Locale("ru_RU");
         ResourceBundle dayPart = ResourceBundle.getBundle("DayPart", locale);
         assertEquals(dayPart.getString("night"), message.getDayPart(LocalTime.of(0, 00, 00), locale));
         assertEquals(dayPart.getString("night"), message.getDayPart(LocalTime.of(1, 00, 00), locale));
@@ -152,18 +152,6 @@ public class MessageTest {
         assertEquals("Good evening, New York!", message.formMessage("New York", LocalTime.of(20, 00, 00), locale));
         assertEquals("Good night, New York!", message.formMessage("New York", LocalTime.of(23, 30, 00), locale));
     }
-    
-    @Test 
-    public void shouldFormMessageWithLocaleES() {
-    Locale locale = new Locale("es_ES");
-    assertEquals("Buenas noches, New York!", message.formMessage("New York", LocalTime.of(5, 00, 00), locale));
-    assertEquals("Buenos dias, New York!", message.formMessage("New York", LocalTime.of(8, 00, 00), locale));
-    assertEquals("Buenos dias, New York!", message.formMessage("New York", LocalTime.of(12, 00, 00), locale));
-    assertEquals("Buenas tardes, New York!", message.formMessage("New York", LocalTime.of(19, 00, 00), locale));
-    assertEquals("Buenas tardes, New York!", message.formMessage("New York", LocalTime.of(20, 00, 00), locale));
-    assertEquals("Buenas noches, New York!", message.formMessage("New York", LocalTime.of(23, 30, 00), locale));
-}
-
     
     @Test
     public void shouldReturnDefaultCityZoneId() {
