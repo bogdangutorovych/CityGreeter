@@ -129,20 +129,6 @@ public class MessageTest {
     }
     
     @Test
-    public void shouldFormMessageWithLocaleRU() {
-        Locale locale = new Locale("ru_RU");
-        assertEquals("Доброе утро, New York!", message.formMessage("New York", LocalTime.of(8, 00, 00), locale));
-        assertEquals("Добрый день, New York!", message.formMessage("New York", LocalTime.of(12, 00, 00), locale));
-        assertEquals("Добрый вечер, New York!", message.formMessage("New York", LocalTime.of(19, 00, 00), locale));
-        assertEquals("Добрый вечер, New York!", message.formMessage("New York", LocalTime.of(20, 00, 00), locale));
-        assertEquals("Доброй ночи, New York!", message.formMessage("New York", LocalTime.of(23, 30, 00), locale));
-        assertEquals("Доброй ночи, Киев!", message.formMessage("Киев", LocalTime.of(23, 30, 00), locale));
-        assertEquals("Доброй ночи, !", message.formMessage("", LocalTime.of(23, 30, 00), locale));
-        assertEquals("Доброй ночи, 0123456!", message.formMessage("0123456", LocalTime.of(23, 30, 00), locale));
-        assertEquals("Доброй ночи, №;%:?!", message.formMessage("№;%:?", LocalTime.of(23, 30, 00), locale));
-    }
-    
-    @Test
     public void shouldFormMessageWithLocaleUS() {
         Locale locale = new Locale("en_US");
         assertEquals("Good night, New York!", message.formMessage("New York", LocalTime.of(5, 00, 00), locale));
