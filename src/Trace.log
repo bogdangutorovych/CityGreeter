@@ -1,10 +1,10 @@
-2017-10-05 10:44:26,524 INFO  [main] citygreeter.Main (Main.java:25) - 2 parameters has been entered
-2017-10-05 10:44:26,527 INFO  [main] citygreeter.Message (Message.java:63) - Entered argument for Time Zone - AAA
-2017-10-05 10:44:26,531 INFO  [main] citygreeter.Message (Message.java:75) - ZoneId is set to default - GMT
-2017-10-05 10:44:26,533 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New York
-2017-10-05 10:44:26,583 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 10:44:26.535
-2017-10-05 10:44:26,583 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 07:44:26.531
-2017-10-05 10:44:26,583 INFO  [main] citygreeter.Message (Message.java:80) - Current Locale - ru_RU
-2017-10-05 10:44:26,585 INFO  [main] citygreeter.Message (Message.java:40) - Current day part - MORNING
-2017-10-05 10:44:26,585 INFO  [main] citygreeter.Message (Message.java:41) - First part of Greeting will be - Доброе утро
-2017-10-05 10:44:26,585 INFO  [main] citygreeter.Main (Main.java:27) - Final message - Доброе утро, New York!
+2017-10-05 10:48:58,896 INFO  [main] citygreeter.Main (Main.java:25) - 2 parameters has been entered
+2017-10-05 10:48:58,898 INFO  [main] citygreeter.Message (Message.java:63) - Entered argument for Time Zone - America/New_York
+2017-10-05 10:48:58,908 INFO  [main] citygreeter.Message (Message.java:67) - ZoneId is set to - America/New_York
+2017-10-05 10:48:58,959 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New York
+2017-10-05 10:48:58,959 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 10:48:58.959
+2017-10-05 10:48:58,959 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 03:48:58.908
+2017-10-05 10:48:58,959 INFO  [main] citygreeter.Message (Message.java:80) - Current Locale - ru_RU
+2017-10-05 10:48:58,961 INFO  [main] citygreeter.Message (Message.java:55) - Current day part - NIGHT
+2017-10-05 10:48:58,961 INFO  [main] citygreeter.Message (Message.java:56) - First part of Greeting will be - Доброй ночи
+2017-10-05 10:48:58,962 INFO  [main] citygreeter.Main (Main.java:27) - Final message - Доброй ночи, New York!
