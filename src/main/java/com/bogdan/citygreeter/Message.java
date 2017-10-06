@@ -62,7 +62,7 @@ class Message {
         log.info("Entered argument for Time Zone - " + enteredTimeZone);
         Set<String> ZoneIds = ZoneId.getAvailableZoneIds();
         for (String zone : ZoneIds) {
-            if (zone.equals(enteredTimeZone)) {
+            if (zone.equals(enteredTimeZone) || zone.indexOf(enteredTimeZone) != -1) {
                 log.info("ZoneId is set to - " + ZoneId.of(zone));
                 return ZoneId.of(zone);
             }

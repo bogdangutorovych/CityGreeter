@@ -33,22 +33,18 @@ public class MessageTest {
         assertEquals(ZoneId.of("America/Puerto_Rico"), message.assignCityZoneId("America/Puerto_Rico"));
         assertEquals(ZoneId.of("Etc/GMT-11"), message.assignCityZoneId("Etc/GMT-11"));
         assertEquals(ZoneId.of("Etc/GMT-12"), message.assignCityZoneId("Etc/GMT-12"));
-        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("New_York"));
-        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("New_Yor"));
+        assertEquals(ZoneId.of("America/New_York"), message.assignCityZoneId("New_York"));
+        assertEquals(ZoneId.of("America/New_York"), message.assignCityZoneId("New_Yor"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("NewYork"));
-        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId(" "));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("/////"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("!@#$%^&*()"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("1234657890"));
-        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("1"));
         assertEquals(ZoneId.of("Asia/Shanghai"), message.assignCityZoneId("Asia/Shanghai"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Asia_Shanghai"));
-        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Asia"));
-        
-        Set<String> ZoneIds = ZoneId.getAvailableZoneIds();
-        for (String zone : ZoneIds) {
-            assertEquals(ZoneId.of(zone), message.assignCityZoneId(zone));
-        }
+        assertEquals(ZoneId.of("Europe/Kiev"), message.assignCityZoneId("Kiev"));
+        assertEquals(ZoneId.of("Europe/Moscow"), message.assignCityZoneId("Moscow"));
+        assertEquals(ZoneId.of("Pacific/Auckland"), message.assignCityZoneId("Auckland"));
+        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Auck_land"));
         
     }
     
