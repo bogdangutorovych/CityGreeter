@@ -1,14 +1,13 @@
 package com.bogdan.citygreeter;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.Set;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MessageTest {
     
@@ -45,16 +44,6 @@ public class MessageTest {
         assertEquals(ZoneId.of("Europe/Moscow"), message.assignCityZoneId("Moscow"));
         assertEquals(ZoneId.of("Pacific/Auckland"), message.assignCityZoneId("Auckland"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Auck_land"));
-        
-    }
-    
-    @Test (expected = java.time.zone.ZoneRulesException.class) 
-    public void shouldReturnZoneRulesException() {
-        Set<String> ZoneIds = ZoneId.getAvailableZoneIds();
-        for (String zone : ZoneIds) {
-            assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), ZoneId.of((message.assignCityZoneId(zone).toString() + "1")));
-            assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), ZoneId.of((message.assignCityZoneId(zone).toString() + ".")));
-        }
         
     }
     
