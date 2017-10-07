@@ -1,9 +1,9 @@
-2017-10-07 13:09:36,398 INFO  [main] citygreeter.Main (Main.java:26) - 2 parameters has been entered
-2017-10-07 13:09:36,398 INFO  [main] citygreeter.Message (Message.java:62) - Entered argument for Time Zone - America/New_York
-2017-10-07 13:09:36,408 INFO  [main] citygreeter.Message (Message.java:66) - ZoneId is set to - America/New_York
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New York
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 13:09:36.458
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 06:09:36.408
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Message (Message.java:39) - Current day part - MORNING
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Message (Message.java:40) - First part of Greeting will be - Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ
-2017-10-07 13:09:36,458 INFO  [main] citygreeter.Main (Main.java:28) - Final message - Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ, New York!
+2017-10-07 13:21:04,500 INFO  [main] citygreeter.Main (Main.java:26) - 2 parameters has been entered
+2017-10-07 13:21:04,500 INFO  [main] citygreeter.Message (Message.java:62) - Entered argument for Time Zone - New_York
+2017-10-07 13:21:04,510 INFO  [main] citygreeter.Message (Message.java:66) - ZoneId is set to - America/New_York
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New_York
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 13:21:04.560
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 06:21:04.510
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Message (Message.java:39) - Current day part - MORNING
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Message (Message.java:40) - First part of Greeting will be - Доброе утро
+2017-10-07 13:21:04,560 INFO  [main] citygreeter.Main (Main.java:28) - Final message - Доброе утро, New_York!
