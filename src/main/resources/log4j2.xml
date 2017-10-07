@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
 <Appenders>
-<File name="File" fileName="C:\\workspace\citygreeter\src\Trace.log" append="false">
+<File name="File" fileName="Trace.log" append="false">
 <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"></PatternLayout>
 </File>
 </Appenders>
