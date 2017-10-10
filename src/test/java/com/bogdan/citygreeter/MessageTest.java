@@ -33,6 +33,7 @@ public class MessageTest {
         assertEquals(ZoneId.of("Etc/GMT-11"), message.assignCityZoneId("Etc/GMT-11"));
         assertEquals(ZoneId.of("Etc/GMT-12"), message.assignCityZoneId("Etc/GMT-12"));
         assertEquals(ZoneId.of("America/New_York"), message.assignCityZoneId("New_York"));
+        assertEquals(ZoneId.of("America/New_York"), message.assignCityZoneId("New York"));
         assertEquals(ZoneId.of("America/New_York"), message.assignCityZoneId("New_Yor"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("NewYork"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("/////"));
@@ -44,6 +45,7 @@ public class MessageTest {
         assertEquals(ZoneId.of("Europe/Moscow"), message.assignCityZoneId("Moscow"));
         assertEquals(ZoneId.of("Pacific/Auckland"), message.assignCityZoneId("Auckland"));
         assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Auck_land"));
+        assertEquals(ZoneId.of(DEFAULT_TIME_ZONE), message.assignCityZoneId("Dnipro"));
         
     }
     

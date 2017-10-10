@@ -1,9 +1,9 @@
-2017-10-07 21:55:01,564 INFO  [main] citygreeter.Main (Main.java:26) - 2 parameters has been entered
-2017-10-07 21:55:01,574 INFO  [main] citygreeter.Message (Message.java:62) - Entered argument for Time Zone - New_York
-2017-10-07 21:55:01,584 INFO  [main] citygreeter.Message (Message.java:66) - ZoneId is set to - America/New_York
-2017-10-07 21:55:01,624 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New_York
-2017-10-07 21:55:01,624 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 21:55:01.624
-2017-10-07 21:55:01,624 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 14:55:01.584
-2017-10-07 21:55:01,624 INFO  [main] citygreeter.Message (Message.java:44) - Current day part - DAY
-2017-10-07 21:55:01,624 INFO  [main] citygreeter.Message (Message.java:45) - First part of Greeting will be - Добрый день
-2017-10-07 21:55:01,634 INFO  [main] citygreeter.Main (Main.java:28) - Final message - Добрый день, New_York!
+2017-10-10 20:50:18,147 INFO  [main] citygreeter.Main (Main.java:26) - 2 parameters has been entered
+2017-10-10 20:50:18,149 INFO  [main] citygreeter.Message (Message.java:62) - Entered argument for Time Zone - New York
+2017-10-10 20:50:18,168 INFO  [main] citygreeter.Message (Message.java:66) - ZoneId is set to - America/New_York
+2017-10-10 20:50:18,221 INFO  [main] citygreeter.Message (Message.java:28) - Entered city name - New York
+2017-10-10 20:50:18,221 INFO  [main] citygreeter.Message (Message.java:34) - LocalTime - 20:50:18.221
+2017-10-10 20:50:18,222 INFO  [main] citygreeter.Message (Message.java:35) - LocalTime in city's Time Zone - 13:50:18.168
+2017-10-10 20:50:18,224 INFO  [main] citygreeter.Message (Message.java:44) - Current day part - DAY
+2017-10-10 20:50:18,224 INFO  [main] citygreeter.Message (Message.java:45) - First part of Greeting will be - Р”РѕР±СЂС‹Р№ РґРµРЅСЊ
+2017-10-10 20:50:18,224 INFO  [main] citygreeter.Main (Main.java:28) - Final message - Р”РѕР±СЂС‹Р№ РґРµРЅСЊ, New York!
